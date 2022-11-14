@@ -16,7 +16,7 @@ async function connection() {
     const updation = await collection.updateOne({pages:500},{$rename:{'bokkknameRenamed':'name'}})
     //Deletion
     const deletion = await collection.deleteOne({name: 'C++ Book'})
-    // Find the first document in the collection
+    //Find
     const find = await collection.find();
     console.log(insertion);
     console.log(updation)
